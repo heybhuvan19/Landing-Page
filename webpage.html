@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Sharda E-zone</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: poppins, sans-serif;
+            ;
+        }
+
+        .navbar {
+            margin: 0px;
+            font-family: poppins, sans-serif;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 16px;
+            background-color: #fff;
+            animation: navbar 3s cubic-bezier(0.97, 0.02, 0, 0.98) 0ms 1 forwards;
+            
+        }
+
+        ul {
+            display: flex;
+            gap: 90px;
+            
+
+        }
+
+        li {
+            cursor: pointer;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .ultra {
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: 200px;
+            color: #000000;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            margin: 110px 0px 0px 0px;
+            font-size: 40px
+        }
+
+        b {
+            margin: 0px 9px;
+        }
+
+        .content p {
+            font-size: small;
+            font-weight: 300;
+            text-align: center;
+            padding: 0px 90px 0px 480px;
+            width: 35%;
+        }
+        .mainc{
+            background-color: rgb(251, 250, 250);
+            border-radius:30px ;
+            margin-top: 50px;
+            display:flex;
+            flex-direction: column;
+            border:2px solid rgb(176, 176, 176);
+            justify-content: center;
+            height:450px;
+            margin:0px 250px 0px 240px;
+            border:none;
+            box-shadow:inset 0px 0px 20px 13px;
+        }
+        .image2{
+            display:flex;
+            font-size:x-large;
+            text-wrap: wrap;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-decoration: underline;
+            text-decoration-thickness: 6px;
+            text-decoration-color:crimson;
+            position:relative;
+            top:150px;
+            animation: styling 3s cubic-bezier(0.97, 0.02, 0, 0.98) 1ms 1 forwards
+        }
+        .translate{
+            transform:translateX(-1050px);
+            text-decoration-color:blueviolet;
+        }
+        @keyframes styling{
+            from{
+                transform:translateY(-500px);
+            }
+            to{
+                transform:translateY(0px);
+                text-decoration-color:blueviolet;
+            }
+        }
+        @keyframes navbar{
+            from{
+                transform: translateY(-500px);
+            }
+            to{
+                transform:translateY(7px);
+            }
+        }
+        .box1{
+            display:flex;
+            border:1px solid black;
+            border-radius:30px;
+            padding:10px 0px 0px 0px ;
+            width:280px;
+            height:150px;
+            justify-content: center;
+            position:relative;
+            top:230px;
+            left:10px;
+            margin:10px;
+            font-weight: bolder;
+            font-size: large;
+            background-color: rgb(235, 235, 235);
+            box-shadow: 0px 0px 7px 0px ;
+            border:none;
+               
+        }
+        .box2{
+            display:flex;
+            flex-direction: row;
+            border:1px solid black;
+            border-radius:30px;
+            width:280px;
+            height:150px;
+            justify-content: center;
+            padding:10px 0px 0px 0px ;
+            position:relative;
+            top:59px;
+            left:350px;
+            margin:10px;  
+            font-weight: bolder;
+            font-size: large;
+            background-color: rgb(235, 235, 235);
+            box-shadow: 0px 0px 7px 0px ;
+            border:none;
+        }
+        .box3{
+            display:flex;
+            align-self: flex-end;
+            flex-direction: row;
+            border:1px solid black;
+            border-radius:30px;
+            margin:10px 150px 0px 0px;
+            width:280px;
+            height:150px;
+            justify-content: center;
+            padding:10px 0px 0px 0px ;
+            position:relative;
+            bottom:111px;
+            left:710px;
+            margin:10px;
+            font-weight: bolder;
+            font-size: large;
+            background-color: rgb(235, 235, 235);
+            box-shadow: 0px 0px 7px 0px ;
+            border:none;    
+        }
+        .button1{
+            position:relative;
+            bottom:200px;
+            left:25px;
+        }
+        .button2{
+            position:relative;
+            bottom:234px;
+            left:361px;
+        }
+        .button3{
+            position:relative;
+            bottom:268px;
+            left:721px;
+        }
+        .Download1{
+            background-color: seagreen;
+            border:0cap;color:white;
+            border-radius:5px;
+            padding:9px;
+            margin:0px 21px 0px 5px ;
+            font-weight: bold;
+        }
+        .Download2{
+            background-color: slateblue;
+            border:0cap;color:white;
+            border-radius:5px;
+            padding:9px;
+            font-weight: bold;
+        }
+        .Download3{
+            background-color: seagreen;
+            border:0cap;color:white;
+            border-radius:5px;
+            padding:9px;
+            margin:0px 21px 0px 5px;
+            font-weight: bold;
+        }
+        .Download4{
+            background-color: slateblue;
+            border:0cap;color:white;
+            border-radius:5px;
+            padding:9px;
+            font-weight: bold;
+        }
+        .Download5{
+            background-color: seagreen;
+            border:0cap;color:white;
+            border-radius:5px;
+            padding:9px;
+            margin:0px 21px 0px 5px;
+            font-weight: bold;
+        }
+        .Download6{
+            background-color: slateblue;
+            border:0cap;color:white;
+            border-radius:5px;
+            padding:9px;
+            font-weight: bold;  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="ultra"><b>UltraEdit</b></div>
+        <div>
+            <nav>
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About us</li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                        alt=""></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <hr>
+    <div class="content">
+        <header>Download <b>UltraEdit</b> for Windows</header>
+
+        <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+            editor</p>
+    </div>
+    <div class="mainc">
+        <div class="image2 translate">
+            <p>Download UltraEdit <sub> v2023.1(released 08/16/2023)\Hotfix</sub></p>
+        </div>
+        <div class="box">
+            <div class="box1">English</div>
+            <div class="box2">Deutsch</div>
+            <div class="box3">Italiano</div>
+            <div class="button1">
+                <button class="Download1">Download 32-bit</button>
+                <button class="Download2">Download 62-bit</button>
+            </div>
+            <div class="button2">
+                <button class="Download3">Download 32-bit</button>
+                <button class="Download4">Download 62-bit</button>
+            </div>
+            <div class="button3">
+                <button class="Download5">Download 32-bit</button>
+                <button class="Download6">Download 62-bit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
